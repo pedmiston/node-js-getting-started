@@ -20,6 +20,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/times', function(request, response) {
+    var i
     var result = ''
     var times = process.env.TIMES || 5
     for (i=0; i < times; i++)
@@ -43,5 +44,3 @@ app.get('/db', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-
