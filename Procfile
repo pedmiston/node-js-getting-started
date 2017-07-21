@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/tsc --outDir build/ --module commonjs lib/index.ts && node build/index.js
+web: ./node_modules/.bin/tsc --module commonjs index.ts && node index.js
